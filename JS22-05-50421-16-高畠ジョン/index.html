@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>東浦町観光ガイド</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet"
+          href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+
+    <!-- Google Maps API -->
+    <script>
+        (g => {
+            var h, a, k,
+            p = "The Google Maps JavaScript API",
+            c = "google",
+            l = "importLibrary",
+            q = "__ib__",
+            m = document,
+            b = window;
+
+            b = b[c] || (b[c] = {});
+            var d = b.maps || (b.maps = {}),
+            r = new Set(),
+            e = new URLSearchParams(),
+            u = () => h || (h = new Promise(async (f, n) => {
+
+                await (a = m.createElement("script"));
+
+                e.set("libraries", [...r] + "");
+
+                for (k in g)
+                    e.set(
+                        k.replace(/[A-Z]/g,
+                        t => "_" + t[0].toLowerCase()),
+                        g[k]
+                    );
+
+                e.set("callback", c + ".maps." + q);
+
+                a.src =
+                    `https://maps.${c}apis.com/maps/api/js?` + e;
+
+                d[q] = f;
+
+                a.onerror = () =>
+                    h = n(Error(p + " could not load."));
+
+                m.head.append(a);
+            }));
+
+            d[l] ?
+                console.warn(p + " only loads once.") :
+                d[l] = (f, ...n) =>
+                    r.add(f) && u().then(() => d[l](f, ...n));
+
+        })({
+            key: "AIzaSyDV3FpXW04xEM-FIYqipKtCZexQiUIR6VU"
+        });
+    </script>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>東浦町観光ガイド</h1>
+
+    <p>
+        東浦町のおすすめスポット・イベントを紹介します
+    </p>
+
+</header>
+
+
+<main>
+
+    <!-- INTRODUCTION -->
+
+    <section class="intro">
+
+        <h2>東浦町について</h2>
+
+        <p>
+            東浦町には、自然を楽しめる公園や、
+            ショッピングを楽しめる施設、
+            歴史や文化に触れられるイベントがあります。
+        </p>
+
+    </section>
+
+
+    <!-- MAP -->
+
+    <section>
+
+        <h2 class="section-title">
+            観光スポットマップ
+        </h2>
+
+        <div id="map"></div>
+
+    </section>
+
+
+    <!-- スポット -->
+
+    <section class="spots">
+
+        <h2 class="section-title">
+            おすすめスポット
+        </h2>
+
+
+        <div id="accordion">
+
+            <!-- イオン -->
+
+            <h3>イオンモール東浦</h3>
+
+            <div>
+
+                <img src="images/aeon.jpg"
+                     class="thumbnail"
+                     alt="イオンモール東浦">
+
+                <h3>イオンモール東浦</h3>
+
+                <p>
+                    東浦町にある大型ショッピングモールです。
+                    ファッション、グルメ、ショッピングなど、
+                    様々な楽しみ方ができます。
+                </p>
+
+                <button
+                    class="map-button"
+                    data-spot="aeon">
+                    地図で見る
+                </button>
+
+            </div>
+
+
+            <!-- 於大公園 -->
+
+            <h3>於大公園</h3>
+
+            <div>
+
+                <img src="images/odai-park.jpg"
+                     class="thumbnail"
+                     alt="於大公園">
+
+                <h3>於大公園</h3>
+
+                <p>
+                    東浦町にある自然豊かな公園です。
+                    遊具広場やバーベキュー広場、
+                    おもしろサイクル広場などがあります。
+                </p>
+
+                <button
+                    class="map-button"
+                    data-spot="park">
+                    地図で見る
+                </button>
+
+            </div>
+
+
+            <!--於大まつり-->
+
+            <h3>於大まつり</h3>
+
+            <div>
+
+                <img src="images/odai-matsuri.jpg"
+                     class="thumbnail"
+                     alt="於大まつり">
+
+                <h3>於大まつり</h3>
+
+                <p>
+                    東浦町の春を代表するイベントです。
+                    於大行列やステージイベント、
+                    物産展などが行われます。
+                </p>
+
+                <button
+                    class="map-button"
+                    data-spot="matsuri">
+                    地図で見る
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURE -->
+
+    <section class="feature">
+
+        <h2>於大まつりの見どころ</h2>
+
+        <p>
+            於大まつりでは、於大姫や侍女、
+            武者たちが於大のみちを歩く
+            「於大行列」が行われます。
+        </p>
+
+        <p>
+            歴史的な衣装を身につけた人々による
+            華やかな行列を見ることができます。
+        </p>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        東浦町観光ガイド
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```

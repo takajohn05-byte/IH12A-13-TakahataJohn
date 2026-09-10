@@ -1,0 +1,328 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        "Yu Gothic",
+        "Hiragino Kaku Gothic ProN",
+        Arial,
+        sans-serif;
+
+    background: #f5f5f5;
+
+    color: #333;
+
+    line-height: 1.7;
+}
+
+
+/*HEADER*/
+
+header {
+
+    background:
+        linear-gradient(
+            135deg,
+            #333,
+            #555
+        );
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+}
+
+
+header h1 {
+
+    margin: 0;
+
+    font-size: 40px;
+
+}
+
+
+header p {
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+}
+
+
+/*main*/
+
+main {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 40px 20px;
+
+}
+
+
+.intro {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    margin-bottom: 40px;
+
+    box-shadow:
+        0 3px 15px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.intro h2 {
+
+    margin-top: 0;
+
+}
+
+
+/*SECTION TITLE*/
+
+.section-title {
+
+    text-align: center;
+
+    margin:
+        40px 0 25px;
+
+    font-size: 28px;
+
+}
+
+
+/*GOOGLE MAP*/
+
+#map {
+
+    width: 100%;
+
+    height: 550px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0,0,0,0.2);
+
+}
+
+
+/*SPOTS*/
+
+.spots {
+
+    margin-top: 50px;
+
+}
+
+
+#accordion {
+
+    margin-top: 20px;
+
+}
+
+
+/*jQuery UI*/
+
+#accordion h3 {
+
+    font-size: 18px;
+
+}
+
+
+#accordion > div {
+
+    padding: 25px;
+
+}
+
+
+/*THUMBNAIL*/
+
+.thumbnail {
+
+    width: 280px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    display: block;
+
+    margin-bottom: 15px;
+
+}
+
+
+/*BUTTON*/
+
+.map-button {
+
+    background: #333;
+
+    color: white;
+
+    border: none;
+
+    padding:
+        10px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+
+.map-button:hover {
+
+    background: #555;
+
+}
+
+
+/*FEATURE*/
+
+.feature {
+
+    background: white;
+
+    margin-top: 50px;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 3px 15px
+        rgba(0,0,0,0.08);
+
+}
+
+
+.feature h2 {
+
+    margin-top: 0;
+
+}
+
+
+/*INFOWINDOW*/
+
+.info-window {
+
+    width: 280px;
+
+}
+
+
+.info-window img {
+
+    width: 100%;
+
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+}
+
+
+.info-window h2 {
+
+    font-size: 20px;
+
+    margin:
+        10px 0;
+
+}
+
+
+.info-window p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+}
+
+
+/*FOOTER*/
+
+footer {
+
+    background: #333;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+
+}
+
+
+/*MOBILE*/
+
+@media (max-width: 700px) {
+
+    header h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    #map {
+
+        height: 400px;
+
+    }
+
+
+    .thumbnail {
+
+        width: 100%;
+
+        height: 200px;
+
+    }
+
+
+    .intro,
+    .feature {
+
+        padding: 20px;
+
+    }
+
+}
