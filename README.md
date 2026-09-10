@@ -1,1 +1,0 @@
-# IH12A-13-TakahataJohn
